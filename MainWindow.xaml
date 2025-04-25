@@ -1,0 +1,41 @@
+﻿<Window x:Class="RoomRentalAppilcationForm.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RoomRentalAppilcationForm"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="13*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="12*"/>
+            <RowDefinition Height="45*"/>
+            <RowDefinition Height="377*"/>
+        </Grid.RowDefinitions>
+        <TextBox HorizontalAlignment="Left" Margin="121,1,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="192" TextChanged="TextBox_TextChanged" Grid.Row="2" Grid.ColumnSpan="2"/>
+        <TextBox HorizontalAlignment="Left" Margin="121,142,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="243" Grid.Row="2" Grid.ColumnSpan="2"/>
+        <TextBox HorizontalAlignment="Left" Margin="303,142,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="155" TextChanged="TextBox_TextChanged_1" Grid.Row="2" Grid.Column="1"/>
+        <Label Content="Label" HorizontalAlignment="Left" Margin="121,15,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Grid.Row="1"/>
+        <Label Content="Label" HorizontalAlignment="Left" Margin="132,108,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.157,0.384" Grid.Row="2" Grid.ColumnSpan="2">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-1.071"/>
+                    <TranslateTransform X="-0.052" Y="0.467"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <TextBox HorizontalAlignment="Left" Height="24" Margin="121,60,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="487" Grid.Row="2" Grid.ColumnSpan="2"/>
+        <TextBox HorizontalAlignment="Left" Margin="262,1,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="196" Grid.Row="2" Grid.Column="1"/>
+        <Label x:Name="First" Margin="49,0,-49,0" Grid.RowSpan="3" Grid.ColumnSpan="2"/>
+        <Label Margin="0,0,0,23" Grid.RowSpan="3" HorizontalAlignment="Right" Width="800" Grid.ColumnSpan="2" Height="434" VerticalAlignment="Bottom">
+            <Label Content="Label"/>
+        </Label>
+
+    </Grid>
+</Window>
